@@ -1,0 +1,33 @@
+2025-05-20 23:57:02,032 - INFO - Starting bank customer profitability analysis pipeline
+2025-05-20 23:57:02,032 - INFO - Creating directory structure
+2025-05-20 23:57:02,034 - INFO - Directory structure created
+2025-05-20 23:57:02,035 - INFO - Starting step: Generate synthetic data
+2025-05-20 23:57:05,146 - INFO - Completed step: Generate synthetic data in 3.11 seconds
+2025-05-20 23:57:05,146 - INFO - Starting step: Run profitability analysis
+2025-05-20 23:57:13,449 - ERROR - Error in step: Run profitability analysis
+2025-05-20 23:57:13,450 - ERROR - Command failed with error code: 1
+2025-05-20 23:57:13,451 - ERROR - Error details: Command 'python bank_profitability_pipeline.py' returned non-zero exit status 1.
+2025-05-20 23:57:13,451 - ERROR - Pipeline failed at step: Run profitability analysis
+2025-05-20 23:57:13,451 - ERROR - Pipeline failed
+2025-05-20 23:59:53,562 - INFO - Starting bank customer profitability analysis pipeline
+2025-05-20 23:59:53,562 - INFO - Creating directory structure
+2025-05-20 23:59:53,562 - INFO - Directory structure created
+2025-05-20 23:59:53,562 - INFO - Starting step: Generate synthetic data
+2025-05-20 23:59:54,681 - INFO - Completed step: Generate synthetic data in 1.12 seconds
+2025-05-20 23:59:54,682 - INFO - Starting step: Run profitability analysis
+2025-05-20 23:59:56,763 - ERROR - Error in step: Run profitability analysis
+2025-05-20 23:59:56,764 - ERROR - Command failed with error code: 1
+2025-05-20 23:59:56,764 - ERROR - Error details: Command 'python bank_profitability_pipeline.py' returned non-zero exit status 1.
+2025-05-20 23:59:56,764 - ERROR - Pipeline failed at step: Run profitability analysis
+2025-05-20 23:59:56,764 - ERROR - Pipeline failed
+2025-05-21 00:02:17,146 - INFO - Starting bank customer profitability analysis pipeline
+2025-05-21 00:02:17,146 - INFO - Creating directory structure
+2025-05-21 00:02:17,146 - INFO - Directory structure created
+2025-05-21 00:02:17,146 - INFO - Starting step: Generate synthetic data
+2025-05-21 00:02:18,173 - INFO - Completed step: Generate synthetic data in 1.03 seconds
+2025-05-21 00:02:18,174 - INFO - Starting step: Run profitability analysis
+2025-05-21 00:02:20,428 - ERROR - Error in step: Run profitability analysis
+2025-05-21 00:02:20,428 - ERROR - Command failed with error code: 1
+2025-05-21 00:02:20,428 - ERROR - Error details: Command 'python bank_profitability_pipeline.py' returned non-zero exit status 1.
+2025-05-21 00:02:20,428 - ERROR - Pipeline failed at step: Run profitability analysis
+2025-05-21 00:02:20,429 - ERROR - Pipeline failed

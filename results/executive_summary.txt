@@ -1,0 +1,33 @@
+BANK CUSTOMER PROFITABILITY ANALYSIS
+===================================
+
+Total Customers Analyzed: 1000
+Profitable Customers: 459 (45.9%)
+Total Net Profit: $-52,817.37
+Average Profit per Customer: $-52.82
+
+SEGMENT BREAKDOWN
+-----------------
+Loss: 541 customers (54.1%)
+  Average profit: $-464.11
+  Total segment profit: $-251,082.11
+
+Low_Profit: 297 customers (29.7%)
+  Average profit: $238.81
+  Total segment profit: $70,926.12
+
+Medium_Profit: 135 customers (13.5%)
+  Average profit: $712.84
+  Total segment profit: $96,233.56
+
+High_Profit: 27 customers (2.7%)
+  Average profit: $1152.04
+  Total segment profit: $31,105.06
+
+TOP PROFIT DRIVERS
+------------------
+Is Profitable: 0.803 correlation
+Years With Bank: 0.296 correlation
+Avg Balance: 0.273 correlation
+Fee Revenue: 0.187 correlation
+Overdraft Count: 0.137 correlation

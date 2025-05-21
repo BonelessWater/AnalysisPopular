@@ -1,0 +1,43 @@
+2025-05-21 00:03:35,692 - INFO - Starting bank profitability analysis pipeline
+2025-05-21 00:03:35,693 - INFO - Loading raw data
+2025-05-21 00:03:35,702 - INFO - Loaded data with shape: (1000, 32)
+2025-05-21 00:03:35,702 - INFO - Starting data preprocessing
+2025-05-21 00:03:35,702 - INFO - Available columns: ['customer_id', 'age', 'sex', 'marital_status', 'dependents', 'education_level', 'employment_status', 'annual_income', 'residential_status', 'years_with_bank', 'num_active_accounts', 'avg_balance', 'total_deposits', 'transaction_frequency', 'digital_ratio', 'credit_utilization', 'overdraft_count', 'fee_revenue', 'credit_score', 'open_credit_lines', 'delinquency_count', 'total_loan_amount', 'ltv_ratio', 'ever_defaulted', 'branch_visits', 'call_center_calls', 'complaints', 'digital_logins', 'rfm_score', 'cross_sell_index', 'churn_risk_score', 'net_profit']
+2025-05-21 00:03:35,703 - INFO - Numeric features: ['age', 'dependents', 'annual_income', 'years_with_bank', 'num_active_accounts', 'avg_balance', 'total_deposits', 'transaction_frequency', 'digital_ratio', 'credit_utilization', 'overdraft_count', 'fee_revenue', 'credit_score', 'open_credit_lines', 'delinquency_count', 'total_loan_amount', 'ltv_ratio', 'ever_defaulted', 'branch_visits', 'call_center_calls', 'complaints', 'digital_logins', 'rfm_score', 'cross_sell_index', 'churn_risk_score']
+2025-05-21 00:03:35,703 - INFO - Categorical features: ['sex', 'marital_status', 'education_level', 'employment_status', 'residential_status']
+2025-05-21 00:03:35,703 - INFO - Creating profit segments from net_profit
+2025-05-21 00:03:35,721 - INFO - Preprocessed data saved to data/processed/processed_data.csv
+2025-05-21 00:03:35,721 - INFO - Starting model training
+2025-05-21 00:03:35,722 - INFO - Feature columns: ['age', 'sex', 'marital_status', 'dependents', 'education_level', 'employment_status', 'annual_income', 'residential_status', 'years_with_bank', 'num_active_accounts', 'avg_balance', 'total_deposits', 'transaction_frequency', 'digital_ratio', 'credit_utilization', 'overdraft_count', 'fee_revenue', 'credit_score', 'open_credit_lines', 'delinquency_count', 'total_loan_amount', 'ltv_ratio', 'ever_defaulted', 'branch_visits', 'call_center_calls', 'complaints', 'digital_logins', 'rfm_score', 'cross_sell_index', 'churn_risk_score']
+2025-05-21 00:03:35,723 - INFO - Training regression model
+2025-05-21 00:03:36,085 - INFO - Training classification model
+2025-05-21 00:03:36,309 - INFO - Training binary classification model
+2025-05-21 00:03:36,418 - INFO - Models saved to disk
+2025-05-21 00:03:36,418 - INFO - Evaluating models
+2025-05-21 00:03:36,427 - INFO - Regression model - RMSE: 246.51, R²: 0.80
+2025-05-21 00:03:36,472 - INFO - Classification model report:
+               precision    recall  f1-score   support
+
+  high_profit       0.00      0.00      0.00         5
+         loss       0.78      0.97      0.86       116
+   low_profit       0.44      0.47      0.45        51
+medium_profit       0.00      0.00      0.00        28
+
+     accuracy                           0.68       200
+    macro avg       0.30      0.36      0.33       200
+ weighted avg       0.57      0.68      0.62       200
+
+2025-05-21 00:03:36,484 - INFO - Binary classification model report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.91      0.89       116
+           1       0.86      0.82      0.84        84
+
+    accuracy                           0.87       200
+   macro avg       0.87      0.86      0.87       200
+weighted avg       0.87      0.87      0.87       200
+
+2025-05-21 00:03:36,485 - INFO - Binary classification AUC: 0.96
+2025-05-21 00:03:36,486 - INFO - Analyzing feature importance
+2025-05-21 00:03:37,264 - INFO - Feature importance plot saved to results/feature_importance.png
+2025-05-21 00:03:37,266 - INFO - Pipeline completed successfully

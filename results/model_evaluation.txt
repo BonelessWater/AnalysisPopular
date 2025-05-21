@@ -1,0 +1,28 @@
+Regression Model (Net Profit)
+RMSE: 246.51
+R²: 0.80
+
+Classification Model (Profit Segments)
+               precision    recall  f1-score   support
+
+  high_profit       0.00      0.00      0.00         5
+         loss       0.78      0.97      0.86       116
+   low_profit       0.44      0.47      0.45        51
+medium_profit       0.00      0.00      0.00        28
+
+     accuracy                           0.68       200
+    macro avg       0.30      0.36      0.33       200
+ weighted avg       0.57      0.68      0.62       200
+
+
+Binary Classification Model (Profitable vs Unprofitable)
+              precision    recall  f1-score   support
+
+           0       0.88      0.91      0.89       116
+           1       0.86      0.82      0.84        84
+
+    accuracy                           0.87       200
+   macro avg       0.87      0.86      0.87       200
+weighted avg       0.87      0.87      0.87       200
+
+AUC: 0.96

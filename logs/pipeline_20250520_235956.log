@@ -1,0 +1,11 @@
+2025-05-20 23:59:56,510 - INFO - Starting bank profitability analysis pipeline
+2025-05-20 23:59:56,510 - INFO - Loading raw data
+2025-05-20 23:59:56,531 - INFO - Loaded data with shape: (1000, 32)
+2025-05-20 23:59:56,531 - INFO - Starting data preprocessing
+2025-05-20 23:59:56,532 - INFO - Numeric features: ['age', 'dependents', 'annual_income', 'years_with_bank', 'num_active_accounts', 'avg_balance', 'total_deposits', 'transaction_frequency', 'digital_ratio', 'credit_utilization', 'overdraft_count', 'fee_revenue', 'credit_score', 'open_credit_lines', 'delinquency_count', 'total_loan_amount', 'ltv_ratio', 'ever_defaulted', 'branch_visits', 'call_center_calls', 'complaints', 'digital_logins', 'rfm_score', 'cross_sell_index', 'churn_risk_score']
+2025-05-20 23:59:56,532 - INFO - Categorical features: ['customer_id', 'sex', 'marital_status', 'education_level', 'employment_status', 'residential_status']
+2025-05-20 23:59:56,532 - INFO - Creating profit segments from net_profit
+2025-05-20 23:59:56,545 - INFO - Preprocessed data saved to data/processed/processed_data.csv
+2025-05-20 23:59:56,545 - INFO - Starting model training
+2025-05-20 23:59:56,545 - INFO - Training regression model
+2025-05-20 23:59:56,545 - ERROR - Pipeline failed: A given column is not a column of the dataframe
